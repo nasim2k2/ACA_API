@@ -1,0 +1,23 @@
+{
+  "name": "aca-te-api-automation",
+  "version": "1.0.0",
+  "description": "ACA Tech Enabledment API Automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-e2e": "newman run TechEnablement.postman_collection.json -e e2e_te_api_env.postman_environment.json",
+    "test-qa": "newman run TechEnablement.postman_collection.json -e qa_te_api_env.postman_environment.json"
+  },
+  "keywords": [
+    "api",
+    "newman"
+  ],
+  "author": "Moeen",
+  "dependencies": {
+    "newman": "^5.0.0",
+    "newman-reporter-html": "^1.0.5",
+    "newman-reporter-htmlextra": "^1.14.0",
+    "newman-reporter-teamcity": "^0.1.12",
+    "npm": "^6.14.4"
+  }
+}
